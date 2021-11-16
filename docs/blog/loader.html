@@ -28,7 +28,12 @@
     <div class="row" style="width:100%">
       <div class="col-3 d-none d-md-block"></div>
       <div class="col m-3"> 
-        <zero-md id="blogMarkdown"></zero-md>
+        <zero-md id="blogMarkdown">
+          <template>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4/github-markdown.min.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PrismJS/prism@1/themes/prism.min.css">     
+          </template>
+        </zero-md>
       </div>
       <div class="col-3 d-none d-md-block"></div>
     </div>
