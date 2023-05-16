@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Our Wedding</title>
+    <link rel="icon" type="image/webp" href="/media/logo-small.webp">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <!-- JQuery Code from https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+  </head>
+
+  <body style="padding-top: 76px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img style="height: 50px; padding: 5px; padding-left:20px;" src="/media/logo-small.webp"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Infos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://hepcatclub.com/" target="_blank" rel="noopener noreferrer">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anmeldung</a>
+                    </li>
+                </ul>
+            </div>
+            <small style="color:white">
+                <svg height=36px version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <path fill=white d="M2.025,12.5h19.949c-0.017,0.338-0.051,0.672-0.101,1h-1.388v1h-3.268v1h-2.089v1h3.413v1h-1.156v1h-1.239v1h0.77v1H15.12
+                        v0.994C14.137,21.817,13.091,22,12,22C6.646,22,2.287,17.789,2.025,12.5z M21.975,11.5H2.025C2.287,6.211,6.646,2,12,2
+                        c1.094,0,2.142,0.184,3.126,0.509V3.5h1.654v1h0.979v1h0.782v1h0.698v1h-0.698v1h0.897v1h0.838v1h1.597
+                        C21.923,10.828,21.958,11.162,21.975,11.5z M12,6.75c0-1.381-1.119-2.5-2.5-2.5S7,5.369,7,6.75c0,1.381,1.119,2.5,2.5,2.5
+                        S12,8.131,12,6.75z"/>
+                </svg>
+                Under construction
+            </small> 
+        </div>
+    </nav>
+
+    <!-- lazy loading -->
+    <script>
+      const stylesToLoad = [
+          'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css',
+          'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css',
+          '/css/main.css',
+          'style.css'
+      ];
+
+      const lazyLoadCSS = (url) => {
+          var cssFa = document.createElement('link');
+          cssFa.href = url;
+          cssFa.rel = 'stylesheet';
+          cssFa.type = 'text/css';
+          document.getElementsByTagName('head')[0].appendChild(cssFa);
+      };
+
+      for (let url of stylesToLoad) {
+        lazyLoadCSS(url);
+      }
+    </script>
+  </body>
+</html>
